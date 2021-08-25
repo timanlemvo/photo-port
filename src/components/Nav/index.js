@@ -2,6 +2,7 @@ import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
+    
   const  categories = [
     { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
     { name: 'portraits', description: 'Portraits of people in my life' },
@@ -10,7 +11,8 @@ function Nav() {
   ];
 
   const handleClick = () => {
-    console.log("click handled")
+    console.log(item);
+    return item;
   }
 
   return (
